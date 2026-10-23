@@ -30,6 +30,8 @@ header{background:#000;border-bottom:2px solid var(--gold);padding:14px 20px;dis
 header svg{flex:none}
 header h1{margin:0;font-size:21px;letter-spacing:.3px;color:#f0d27a;font-weight:650}
 header p{margin:0;color:#c8c8cc;font-size:14px}
+.dl{text-decoration:none;display:inline-block;background:var(--gold);color:#000;font-weight:700;border-color:var(--gold)}
+.dl[hidden]{display:none}
 .hd{display:flex;align-items:baseline;gap:6px 18px;flex-wrap:wrap}
 header .sp{flex:1}
 .iconbtn{background:transparent;border:1px solid #444;color:#ddd;border-radius:8px;padding:6px 10px;cursor:pointer;font-size:13px}
@@ -141,6 +143,7 @@ mark.t.sel{outline:2px solid var(--gold2);background:rgba(212,175,55,.5);color:#
     <p>100% no seu computador — nenhum documento é enviado para a internet.</p>
   </div>
   <div class="sp"></div>
+  <a class="iconbtn dl" id="dlBtn" href="https://github.com/jairosantosadvog-sys/lexia-anonimizador/releases/latest/download/LexIA-Anonimizador.exe" hidden>Baixar para Windows (.exe)</a>
   <button class="iconbtn" id="helpBtn" type="button">Como usar</button>
   <button class="iconbtn" id="themeBtn" type="button" title="Alternar tema claro/escuro">Tema</button>
 </header>
@@ -1530,5 +1533,6 @@ window.__lexia = { state, run, addFiles, buildDocx, fsx, refreshKeys };
 selInfo(); updateGo();
 })();
 </script>
+<script>try{if(/\.github\.io$/.test(location.hostname))document.getElementById('dlBtn').hidden=false}catch(e){}</script>
 </body>
 </html>
