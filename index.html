@@ -29,7 +29,8 @@ body{background:var(--bg);color:var(--text);font:15px/1.5 "Segoe UI",system-ui,-
 header{background:#000;border-bottom:2px solid var(--gold);padding:14px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 header svg{flex:none}
 header h1{margin:0;font-size:21px;letter-spacing:.3px;color:#f0d27a;font-weight:650}
-header p{margin:0;color:#c8c8cc;font-size:13px}
+header p{margin:0;color:#c8c8cc;font-size:14px}
+.hd{display:flex;align-items:baseline;gap:6px 18px;flex-wrap:wrap}
 header .sp{flex:1}
 .iconbtn{background:transparent;border:1px solid #444;color:#ddd;border-radius:8px;padding:6px 10px;cursor:pointer;font-size:13px}
 .iconbtn:hover{border-color:var(--gold);color:var(--gold2)}
@@ -135,9 +136,9 @@ mark.t.sel{outline:2px solid var(--gold2);background:rgba(212,175,55,.5);color:#
     <path d="M13 33a7 4 0 0 0 14 0M37 33a7 4 0 0 0 14 0" fill="#d4af37" stroke="#d4af37" stroke-width="1.5"/>
     <path d="M24 48h16" stroke="#f0d27a" stroke-width="2.6" stroke-linecap="round"/>
   </svg>
-  <div>
+  <div class="hd">
     <h1>LexIA Anonimizador</h1>
-    <p>Tudo acontece neste navegador — nenhum documento é enviado a servidor algum.</p>
+    <p>100% no seu computador — nenhum documento é enviado para a internet.</p>
   </div>
   <div class="sp"></div>
   <button class="iconbtn" id="helpBtn" type="button">Como usar</button>
